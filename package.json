@@ -1,0 +1,60 @@
+{
+  "name": "postcss-progress-bar",
+  "version": "0.1.0",
+  "description": "PostCSS plugin for styling progress element",
+  "keywords": [
+    "progress",
+    "progress-bar",
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "postcss-progress-bar"
+  ],
+  "homepage": "https://github.com/zwwuu/postcss-progress-bar",
+  "bugs": "https://github.com/zwwuu/postcss-progress-bar/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zwwuu/postcss-progress-bar.git"
+  },
+  "license": "MIT",
+  "author": "zwwuu",
+  "scripts": {
+    "test": "jest --coverage && eslint ."
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:jest/recommended"
+    ],
+    "rules": {
+      "jest/expect-expect": "off"
+    }
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 100
+      }
+    }
+  },
+  "devDependencies": {
+    "clean-publish": "^4.0.0",
+    "eslint": "^8.10.0",
+    "eslint-plugin-jest": "^26.1.1",
+    "jest": "^27.5.1",
+    "postcss": "^8.4.7"
+  },
+  "peerDependencies": {
+    "postcss": "^8.3.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
